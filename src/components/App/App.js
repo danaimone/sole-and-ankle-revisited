@@ -3,17 +3,19 @@ import styled from 'styled-components/macro';
 
 import Header from '../Header';
 import ShoeIndex from '../ShoeIndex';
+import { ThemeProvider } from "styled-components";
+import { QUERIES } from '../../constants';
 
 const App = () => {
   const [sortId, setSortId] = React.useState('newest');
 
   return (
-    <>
+    <ThemeProvider theme={{ queries: QUERIES}}>
       <Header />
       <Main>
         <ShoeIndex sortId={sortId} setSortId={setSortId} />
       </Main>
-    </>
+    </ThemeProvider>
   );
 };
 

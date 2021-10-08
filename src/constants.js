@@ -11,6 +11,20 @@ export const COLORS = {
   secondary: 'hsl(240deg 60% 63%)',
 };
 
+
+const BREAKPOINTS = {
+  phoneMax: 550,
+  tabletMax: 1100,
+  laptopMax: 1500,
+}
+
+export const QUERIES = {
+  /* Default styling is for desktop in this application. */
+  'phone': `(max-width: ${BREAKPOINTS.phoneMax / 16}rem)`,
+  'tablet': `(max-width: ${BREAKPOINTS.tabletMax / 16}rem)`,
+  'laptop': `(max-width: ${BREAKPOINTS.laptopMax / 16}rem)`,
+}
+
 export const WEIGHTS = {
   normal: 500,
   medium: 600,
