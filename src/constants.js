@@ -16,16 +16,16 @@ export const BREAKPOINTS = {
   phoneMax: 600,
   tabletMax: 950,
   laptopMax: 1300,
-  phoneMaxInREM: 600,
-  tabletMaxInREM: 950,
-  laptopMaxInREM: 1300,
+  phoneMaxInREM: 37.5,
+  tabletMaxInREM: 59.375,
+  laptopMaxInREM: 81.25,
 }
 
 export const QUERIES = {
   /* Default styling is for desktop in this application. */
-  'phone': `(max-width: ${BREAKPOINTS.phoneMaxInREM}rem)`,
-  'tablet': `(max-width: ${BREAKPOINTS.tabletMaxInREM}rem)`,
-  'laptop': `(max-width: ${BREAKPOINTS.laptopMaxInREM}rem)`,
+  'phoneAndSmaller': `(max-width: ${BREAKPOINTS.phoneMaxInREM}rem)`,
+  'tabletAndSmaller': `(max-width: ${BREAKPOINTS.tabletMaxInREM}rem)`,
+  'laptopAndSmaller': `(max-width: ${BREAKPOINTS.laptopMaxInREM}rem)`,
 }
 
 export const WEIGHTS = {
