@@ -13,16 +13,19 @@ export const COLORS = {
 
 
 const BREAKPOINTS = {
-  phoneMax: 550,
-  tabletMax: 1100,
-  laptopMax: 1500,
+  phoneMax: 600,
+  tabletMax: 950,
+  laptopMax: 1300,
+  phoneMaxInREM: 600,
+  tabletMaxInREM: 950,
+  laptopMaxInREM: 1300,
 }
 
 export const QUERIES = {
   /* Default styling is for desktop in this application. */
-  'phone': `(max-width: ${BREAKPOINTS.phoneMax / 16}rem)`,
-  'tablet': `(max-width: ${BREAKPOINTS.tabletMax / 16}rem)`,
-  'laptop': `(max-width: ${BREAKPOINTS.laptopMax / 16}rem)`,
+  'phone': `(max-width: ${BREAKPOINTS.phoneMaxInREM}rem)`,
+  'tablet': `(max-width: ${BREAKPOINTS.tabletMaxInREM}rem)`,
+  'laptop': `(max-width: ${BREAKPOINTS.laptopMaxInREM}rem)`,
 }
 
 export const WEIGHTS = {
