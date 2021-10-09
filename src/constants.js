@@ -37,5 +37,5 @@ export const WEIGHTS = {
 export const THEME = {
   queries: QUERIES,
   weights: WEIGHTS,
-  colors: COLORS
+  colors: COLORS,
 }

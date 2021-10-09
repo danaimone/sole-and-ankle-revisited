@@ -8,6 +8,12 @@ import {THEME} from '../../constants';
 
 const App = () => {
     const [sortId, setSortId] = React.useState('newest');
+    React.useEffect(() => {
+        document.documentElement.style.setProperty(
+            '--scrollbar-width',
+            window.innerWidth - document.documentElement.clientWidth + 'px'
+        );
+    }, []);
 
     return (
         <ThemeProvider theme={THEME}>
